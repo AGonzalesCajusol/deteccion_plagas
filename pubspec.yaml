@@ -1,15 +1,28 @@
 name: deteccion_plagas
-description: A sample command-line application with basic argument parsing.
+description: A mobile application for detecting and monitoring pests in crops using Flutter.
 version: 0.0.1
 # repository: https://github.com/my_org/my_repo
 
 environment:
-  sdk: ^3.9.4
+  sdk: ">=3.9.2 <4.0.0"
 
-# Add regular dependencies here.
 dependencies:
-  args: ^2.7.0
+  flutter:
+    sdk: flutter
+  provider: ^6.0.3
+  sqflite: ^2.0.0+4
+  path_provider: ^2.0.8
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
   lints: ^6.0.0
   test: ^1.25.6
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/data/
